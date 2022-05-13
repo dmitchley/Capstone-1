@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <style>
+    /* background image for billboard */
+
+
+
+    .prod {
+        min-height: 500px;
+    }
+
+    .prod:hover {
+        opacity: calc(50%);
+    }
+
+    .flex-equal>* {
+        flex: 1;
+    }
+
+    @media (min-width: 768px) {
+        .flex-md-equal>* {
+            flex: 1;
+        }
+    }
+</style>
+
+
+  <!-- Bootstrap Icons   -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body id="body">
+
+
+
+  <!-- Covid -->
+  <section class="text-center">
+
+    <nav class="bg-primary">
+      <p class="text-light"><b>Stay informed!</b> Visit the SA Department of Health's website for COVID-19 updates: 
+        <a href="www.sacoronavirus.co.za" class="text-light">www.sacoronavirus.co.za</a></p>
+    </nav>
+
+  </section>
+  
+  <!-- Top Logo -->
+
+  <section class="text-center">
+
+    <nav class="pt-5 pb-5">
+      <span>
+        <img src="images/fakealot.png" height="103" alt="">
+      </span>
+
+      
+
+    </nav>
+
+  </section>
+  <!-- Top Logo -->
+
+
+  <!-- inspiraton taken from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+
+
+  <!-- Navbar -->
+
+  <div class="bg-primary">
+
+    <div class="container">
+
+      <nav class="bg-primary">
+        <ul class="nav justify-content-center ">
+          <li class="nav-item ">
+            <a class="nav-link text-light" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#" class="text-secondary">Camping Gear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown">
+              Shoes
+            </a>
+            <ul class="dropdown-menu bg-primary">
+                            
+              <!--appending jquery dropdown!-->
+
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Computers & Electronics</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Books</a>
+          </li>
+
+        <li class="nav-item">
+        <a href="checkout.html">
+          <button type="button" class="btn btn-success" >
+            View Cart
+          </button>  
+        </a>
+          
+        </li>
+
+        </ul>
+
+        
+      </nav>
+    </div>
+
+  </div>
+
+  <!-- Navbar -->
+
+   <!-- Delivery Rates -->
+
+
+   <div class="container mt-5" id="checkout-area">
+
+    <h1>Delivery Rates</h1>
+
+    <div class="row">
+
+           <!-- Three Different Font Sizes -->
+
+        <div class="col-lg-4 my-auto text-center mt-5 card shadow" style="border-top: 10px solid #0B79BF">
+            <h3 class="mt-3 text-primary"> <a href="#" class="btn btn-primary btn-sm onetotwoday-btn">
+              2-3 Day Shipping
+             </a></h3>
+             
+            <h1>Delivery</h1>               
+            <h5 class="mb-1">R500</h5>
+
+            <p class="mb-5"> <i class="bi bi-info-circle"></i> All orders safely delivered within 2-3 days</p>
+        </div>
+
+        <div class="col-lg-4 my-auto text-center mt-5 card shadow-sm" style="border-top: 10px solid #1D1D1D">
+            <h3 class="mt-3 text-primary"> <a href="#" class="btn btn-primary btn-sm day-btn">NEXT DAY</a> </h3>
+            <h1>Delivery</h1>
+            <h5 class="mb-1">R2000</h5>
+            <p class="mb-5"> <i class="bi bi-info-circle"></i> All orders safely delivered within 2-3 days</p>
+        </div>
+
+        <div class="col-lg-4 my-auto text-center mt-5 card shadow-sm" style="border-top: 10px solid #0B79BF">
+            <h3 class="mt-3 text-primary"><a href="#" class="btn btn-sm ">The Following Week</a> </h3>
+            <h1>Delivery</h1>
+            <h5 class="mb-1">R0.00</h5>
+            <p class="mb-5"> <i class="bi bi-info-circle"></i> Delivery within the next Week!</p>
+        </div>
+      
+    </div>
+
+</div>
+
+ <div class="container mt-3">
+
+ 
+  <form>
+
+  
+
+
+    <input type="text" class="form-control mb-2"   id="Artist-Name" placeholder="Address" required>
+
+
+    <input type="text" class="form-control mb-2"   id="artist" placeholder="City" required>
+
+
+    <input type="text" class="form-control mb-2" name="album" id="album" placeholder="Province" required>
+
+
+    <input type="text" class="form-control mb-2" name="year" id="year" placeholder="ZIP" required>
+
+
+ 
+  </form>
+</div>
+
+ </div>
+
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+           
+            <div class="container"  id="checkout-area">
+
+                <div class="" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="go">
+                  <div class=" role="document">
+                    <div class="">
+                   <div class="row">
+                    <div class="modal-header border-bottom-0">
+                         
+   
+                   </div>
+                        
+                      
+                         
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-image" class="invisible">
+                          <thead>
+                             
+                          </thead>
+                          <tbody id="details">
+                          <tbody id="contentz" >
+                            <!-- ADDED PRODUCTS GO IN HERE! -->  
+                            
+                          </tbody>
+                          </tbody>
+                          
+                        </table> 
+                        <div id="discount-area">
+              
+                         <div class="d-flex"></div>
+              
+                        <div class="d-flex justify-content-end">
+                          
+                          <h5>Total including Vat: <span id="pricer"></span></h5>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer border-top-0 d-flex justify-content-between">
+                        <button type="button" class="btn" ></button>
+                        <button type="button" class="btn" ></button>
+                        <a href="./discount.html"> <button type="button" onclick="addArtist()" class="btn btn-success">Continue</button></a>
+                        
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              
+              
+              
+              
+              
+                </div>
+            
+        </div>
+      </div>
+</div>
+
+
+
+  </div>
+
+    <!-- Footer -->
+
+
+  <div class="bg-primary">
+
+    <div class="container">
+
+      <footer class="my-5 pt-5 pb-5 text-light text-center text-small bg-primary">
+        <img src="images/fakealot.png" alt="" width="200">
+        <p class="mt-3 mb-1">&copy; Fakealot Online (Pty) Ltd.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-light">Privacy</a></li>
+          <li class="list-inline-item"><a href="#" class="text-light">Terms</a></li>
+          <li class="list-inline-item"><a href="#" class="text-light">Support</a></li>
+        </ul>
+
+
+      </footer>
+
+    </div>
+  </div>
+
+
+  </div>
+
+   
+</div>
+
+<script src="./js/address.js"></script>
+  <script src="./js/shop.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

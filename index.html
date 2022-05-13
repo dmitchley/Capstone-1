@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakealot - Laptop Catalogue</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <style>
+
+     
+
+    /* background image for billboard */
+
+    .billboard {
+      background: url('./images/billboard-laptop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 300px;
+    }
+
+   
+
+  </style>
+
+
+  <!-- Bootstrap Icons   -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- Covid -->
+  <section class="text-center">
+
+    <nav class="bg-primary">
+      <p class="text-light"><b>Stay informed!</b> Visit the SA Department of Health's website for COVID-19 updates: 
+        <a href="www.sacoronavirus.co.za" class="text-light">www.sacoronavirus.co.za</a></p>
+    </nav>
+
+  </section>
+  
+  <!-- Top Logo -->
+
+  <section class="text-center">
+
+    <nav class="pt-5 pb-5">
+      <span>
+        <img src="images/fakealot.png" height="103" alt="">
+      </span>
+
+      
+
+    </nav>
+
+  </section>
+  <!-- Top Logo -->
+
+
+  <!-- inspiraton taken from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+
+
+  <!-- Navbar -->
+
+  <div class="bg-primary">
+
+    <div class="container">
+
+      <nav class="bg-primary">
+        <ul class="nav justify-content-center ">
+          <li class="nav-item ">
+            <a class="nav-link text-light" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#" class="text-secondary">Camping Gear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown">
+              Shoes
+            </a>
+            <ul class="dropdown-menu bg-primary">
+                            
+              <!--appending jquery dropdown!-->
+
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Computers & Electronics</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Books</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="checkout.html">
+              <button type="button" class="btn btn-success" >
+                View Cart
+              </button>  
+            </a>
+              
+            </li>
+
+        </ul>
+
+        
+      </nav>
+    </div>
+
+  </div>
+
+  <!-- Navbar -->
+
+
+  <!-- Billboard -->
+  <div class="container billboard">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+       
+      </div>
+      <div class="product-device box-shadow d-none d-md-block"></div>
+      <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
+  </div>
+
+  <!-- Billboard -->
+
+
+
+   <!-- Perks -->
+
+
+   <div class="container mt-3 mb-3">
+
+    <div class="row text-center g-4">
+
+      <div class="col-md">
+
+       <a href="https://www.hp.com/za-en/home.html"><img src="./images/hp.png" alt=""></a>
+
+      </div>
+
+      <div class="col-md">
+
+        <a href="https://www.dell.co.za/"><img src="./images/dell.png" alt=""></a>
+
+      </div>
+
+      <div class="col-md">
+
+        <a href="https://www.lenovo.com/za/en/"><img src="./images/lenovo.png" alt=""></a>
+
+      </div>
+
+      <div class="col-md">
+
+        <a href="https://www.asus.com/za/"><img src="./images/asus.png" alt=""></a>
+
+      </div>
+
+     
+
+      <div class="col-md">
+
+        <a href="  https://www.apple.com/za/"> <img src="./images/apple.png" alt=""> </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    <!-- Perks -->
+
+   
+
+ <!-- Product -->
+ 
+ <div class="bg-light"> 
+
+  <div class="container ">
+
+   
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+       
+          <!-- Product -->
+          <div class="col product">
+            <div class="product-under">
+            <div class="card shadow-sm">
+            <a href="HP-NoteBook.html" class="product-image">  <img src="./images/hp-laptop.jpg" class="img-thumbnail img-fluid" >  </a>
+             <div class="card-body">
+                <p class="card-text productName"> HP Notebook 255 G8 | 15.6 | AMD Ryzen 5 | 8GB | 512GB SSD | Win10 Home</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   <b>R</b> <b class="priceValue"> 8999</b>
+                  </div>
+              <div class="col px-4">   <a href="HP-NoteBook.html">  <button type="button" class="btn btn-primary btn-small"> <i class="fas fa-cart-plus"></i>See More </button></a>
+                <button type="button" class="btn btn-primary btn-small addToCart" data-product-id="1"> <i class="fas fa-cart-plus"></i>Quick Add to cart </button></div>
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <!-- Product -->
+
+           <!-- Product -->
+           <div class="col product">
+            <div class="product-under">
+            <div class="card shadow-sm">
+            <a href="Lenovo-Laptop.html" class="product-image">  <img src="./images/lenovo-laptop.jpg" class="img-thumbnail img-fluid" >  </a>
+             <div class="card-body">
+                <p class="card-text productName"> Lenovo Laptop V15 Series Iron Grey Notebook - 256SSD, 4GB Ram</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   <b>R</b> <b class="priceValue"> 6395</b>
+                  </div>
+                  <div class="col px-4">  <a href="Lenovo-Laptop.html">  <button type="button" class="btn btn-primary btn-small"> <i class="fas fa-cart-plus"></i>See More </button></a>
+                  <button type="button" class="btn btn-primary btn-small addToCart" data-product-id="2"> <i class="fas fa-cart-plus"></i>Quick Add to cart </button> </div>
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <!-- Product -->
+           
+
+             <!-- Product -->
+             <div class="col product">
+              <div class="product-under">
+              <div class="card shadow-sm">
+              <a href="dell-laptop.html" class="product-image">  <img src="./images/dell-laptop.jpg" class="img-thumbnail img-fluid" >  </a>
+               <div class="card-body">
+                  <p class="card-text productName">Dell Latitude 7275 12,5'' LED (Refurbished) - 256SSD, 4GB Ram</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     <b>R</b> <b class="priceValue">8499</b>
+                    </div>
+                   
+                    <div class="col px-4">   <a href="dell-laptop.html">  <button type="button" class="btn btn-primary btn-small"> <i class="fas fa-cart-plus"></i>See More </button></a>
+                      <button type="button" class="btn btn-primary btn-small addToCart" data-product-id="3"> <i class="fas fa-cart-plus"></i>Quick Add to cart </button></div>
+                       
+                   
+                  </div>
+                </div>
+              </div>
+            </div></div>
+            <!-- Product -->
+          
+          
+          
+           <!-- Product -->
+           <div class="col product">
+            <div class="product-under">
+            <div class="card shadow-sm">
+            <a href="asus-laptop.html" class="product-image">  <img src="./images/asus-laptop.jpg" class="img-thumbnail img-fluid" >  </a>
+             <div class="card-body">
+                <p class="card-text productName">Asus Zenbook i5 8Gb 512GB SSD 13.3” Notebook - Pine Grey</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   <b>R</b> <b class="priceValue">18999</b>
+                  </div>
+                 
+                  <div class="col px-4">   <a href="asus-laptop.html">  <button type="button" class="btn btn-primary btn-small"> <i class="fas fa-cart-plus"></i>See More </button></a>
+                    <button type="button" class="btn btn-primary btn-small addToCart" data-product-id="4"> <i class="fas fa-cart-plus"></i>Quick Add to cart </button></div>
+                 
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <!-- Product -->
+
+          
+            <!-- Product -->
+            <div class="col product">
+              <div class="product-under">
+              <div class="card shadow-sm">
+              <a href="apple-laptop.html" class="product-image">  <img src="./images/macbook.jpg" class="img-thumbnail img-fluid" >  </a>
+               <div class="card-body">
+                  <p class="card-text productName">Apple MacBook Pro 13-inch with Apple M1 chip 8 core GPU 256GB SSD</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     <b>R</b> <b class="priceValue">26395</b>
+                    </div>
+                     
+                    <div class="col px-4">   <a href="apple-laptop.html">  <button type="button" class="btn btn-primary btn-small"> <i class="fas fa-cart-plus"></i>See More </button></a>
+                      <button type="button" class="btn btn-primary btn-small addToCart" data-product-id="5"> <i class="fas fa-cart-plus"></i>Quick Add to cart </button></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div></div>
+            <!-- Product -->
+         
+          
+           <!-- Product -->
+           <div class="col product">
+            <div class="product-under">
+            <div class="card shadow-sm">
+            <a href="asus-laptop-x425.html" class="product-image">  <img src="./images/asus-x415.jpg" class="img-thumbnail img-fluid" >  </a>
+             <div class="card-body">
+                <p class="card-text productName">ASUS X415 i3 8GB 256GB SSD 14" HD Notebook Grey</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   <b>R</b> <b class="priceValue">8599</b>
+                  </div>
+                   
+                  <div class="col px-4">   <a href="asus-laptop-x425.html">  <button type="button" class="btn btn-primary btn-small"> <i class="fas fa-cart-plus"></i>See More </button></a>
+                    <button type="button" class="btn btn-primary btn-small addToCart" data-product-id="6"> <i class="fas fa-cart-plus"></i>Quick Add to cart </button></div>
+                  
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <!-- Product -->
+            
+          
+       
+    
+  </div>
+
+  </div>
+
+   <!-- Product -->
+ 
+
+    </div>
+
+  
+
+   
+
+  
+</div> 
+
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Your Shopping Cart
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+             
+             
+            </tr>
+          </thead>
+          <tbody id="contentz">
+            <!-- ADDED PRODUCTS GO IN HERE! -->  
+            
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Total including Vat: <span id="pricer"></span></h5>
+        </div>
+        
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="Check-out" class="btn btn-success Check-out">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+  </div>
+
+    <!-- Footer -->
+
+
+  <div class="bg-primary">
+
+    <div class="container">
+
+      <footer class="my-5 pt-5 pb-5 text-light text-center text-small bg-primary">
+        <img src="images/fakealot.png" alt="" width="200">
+        <p class="mt-3 mb-1">&copy; Fakealot Online (Pty) Ltd.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-light">Privacy</a></li>
+          <li class="list-inline-item"><a href="#" class="text-light">Terms</a></li>
+          <li class="list-inline-item"><a href="#" class="text-light">Support</a></li>
+        </ul>
+
+
+      </footer>
+
+    </div>
+  </div>
+
+
+  </div>
+
+  
+
+
+  <script src="./js/shop.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

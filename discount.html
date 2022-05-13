@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+  <!-- Bootstrap Icons   -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<body id="body">
+
+
+
+  <!-- Covid -->
+  <section class="text-center">
+
+    <nav class="bg-primary">
+      <p class="text-light"><b>Stay informed!</b> Visit the SA Department of Health's website for COVID-19 updates:
+        <a href="www.sacoronavirus.co.za" class="text-light">www.sacoronavirus.co.za</a></p>
+    </nav>
+
+  </section>
+
+  <!-- Top Logo -->
+
+  <section class="text-center">
+
+    <nav class="pt-5 pb-5">
+      <span>
+        <img src="images/fakealot.png" height="103" alt="">
+      </span>
+
+
+
+    </nav>
+
+  </section>
+  <!-- Top Logo -->
+
+
+  <!-- inspiraton taken from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+
+
+  <!-- Navbar -->
+
+  <div class="bg-primary">
+
+    <div class="container">
+
+      <nav class="bg-primary">
+        <ul class="nav justify-content-center ">
+          <li class="nav-item ">
+            <a class="nav-link text-light" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#" class="text-secondary">Camping Gear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown">
+              Shoes
+            </a>
+            <ul class="dropdown-menu bg-primary">
+
+              <!--appending jquery dropdown!-->
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Computers & Electronics</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Books</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="checkout.html">
+              <button type="button" class="btn btn-success">
+                View Cart
+              </button>
+            </a>
+
+          </li>
+
+        </ul>
+
+
+      </nav>
+    </div>
+
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Delivery Rates -->
+
+
+  <div class="container mt-5" id="checkout-area">
+
+    <div class="card">
+      <div class="card-body">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Address</th>
+              <th scope="col">City</th>
+              <th scope="col">Province</th>
+              <th scope="col">ZIP</th>
+            </tr>
+          </thead>
+          <tbody id="details">
+
+          <tbody id="contentz">
+            <!-- ADDED PRODUCTS GO IN HERE! -->
+
+          </tbody>
+          </tbody>
+
+        </table>
+
+        <input type="text" class="form-control mb-2" id="discount_form" placeholder="Discount Code is 123">
+        <div id="discount-area">
+          <button class="btn btn-primary btn-lg" id="discount-btn" data-toggle="modal" data-target="#exampleModalLong"
+            id="Check-out">Discount</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <table class="table table-image">
+        <thead>
+          <tr>
+
+
+          </tr>
+        </thead>
+
+      </table>
+
+
+      <div class="d-flex"></div>
+
+      <div class="d-flex justify-content-end">
+
+        <h5>Total including Vat: <span id="pricer"></span></h5>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header"> <img src="./images/fakealot.png" id="animated-logo" width="250" alt="">
+            <h5 class="modal-title" id="exampleModalLongTitle"> </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="toggle"></div>
+
+
+
+            <div id="reference-number"></div>
+
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" id="Check-out">Redeem Reference Number!</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-primary">
+
+      <div class="container">
+
+        <footer class="my-5 pt-5 pb-5 text-light text-center text-small bg-primary">
+          <img src="images/fakealot.png" alt="" width="200">
+          <p class="mt-3 mb-1">&copy; Fakealot Online (Pty) Ltd.</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-light">Privacy</a></li>
+            <li class="list-inline-item"><a href="#" class="text-light">Terms</a></li>
+            <li class="list-inline-item"><a href="#" class="text-light">Support</a></li>
+          </ul>
+
+
+        </footer>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  </div>
+
+  <script src="./js/address.js"></script>
+  <script src="./js/shop.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  </script>
+
+</body>
+
+</html>
